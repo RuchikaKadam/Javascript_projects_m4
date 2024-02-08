@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #faab00f3, #faab00c1, #faab0081);
+    color: aliceblue;
+    padding: 1.8rem
+}
+.calculator{
+    width: 100%;
+    height: 85vh;
+    padding: 2rem;
+    box-shadow: 10px 10px 10px #2e2000d0;
+    background: linear-gradient(180deg,#faab00b6,#faaa00, #faab0078);
+    border-radius: 2rem;
+    max-width: 29rem;
+    margin: 1% 24%;
+}
+.calculator h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    animation: scaling 2s ease-in;
+}
+@keyframes scaling {
+    0% {
+        transform: scale(1.1);
+    }
+    100%{
+        transform: skewX(5deg);
+    }
+}
+.calculator h1 span {
+    color: rgb(0, 12, 9);
+    font-style: italic;
+    font-weight: 800;
+    text-shadow: 4px 6px 10px #382601;
+}
+.input-box{
+    margin: 2.2rem 0.2rem;
+    padding: 2rem;
+    border-radius: 1.2rem;
+    background: #4e35008a;
+    display: flex;
+    align-items: center;
+}
+.input-box input{
+    flex: 1;
+    margin-right: 2rem;
+    padding: 0.4rem;
+    border: #faaa00;
+    outline: 0;
+    font-size: 1.3rem;
+    border-radius: 0.7rem;
+    position: relative;
+    background-color: #faaa00;
+    color: black;
+}
+.input-box input::-webkit-calendar-picker-indicator{
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    cursor: pointer;
+    color: #faaa00;
+    background-position: calc(100% - 1rem);
+    /* background-size: 2rem; */
+}
+.input-box button{
+    background-color:black;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-right: 2rem;
+    padding: 0.5rem;
+    border: rgb(234, 231, 231);
+    outline: 0;
+    border-radius: 0.4rem;
+    color: #faaa00;
+    cursor: pointer;
+}
+#result {
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#result span {
+    color: rgb(65, 62, 62);
+    font-weight: 700;
+}
+@media screen and (min-width: 900px) {
+    .calculator{
+        min-width: 40rem;
+    } 
+}
+@media screen and (max-width: 420px) {
+    .calculator{
+        min-width: 80vw;
+        min-height: 90vh;
+        margin: 1%;
+    }
+    .calculator h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    .calculator h1 span {
+        font-size: 1.5rem;
+    }
+    .input-box{
+        min-height: 500px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .input-box input{
+        min-width: 200px;
+        margin-inline: 1rem;
+        margin-bottom: 1rem;
+    }
+    .input-box button{
+        text-shadow:1.5px 1.5px 5px #f5c043;
+    }
+    #result {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 920px){
+   .calculator{
+    margin: auto;
+   }
+   .calculator h1{
+    font-size: 2.2rem;
+   }
+   .input-box{
+    min-height:25% ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem;
+    padding: 1.5rem;
+   }
+   .input-box button{
+    margin-right: 0.4rem;
+   }
+   #result{
+    font-size: 1.2rem;
+   }
+}
+@media screen and (min-width: 920px) {
+    .input-box{
+        min-height: 30%;
+    }
+}
