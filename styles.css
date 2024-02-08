@@ -5,7 +5,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .container{
-    background: linear-gradient(120deg, rgba(0, 0, 0, 0.821), rgba(65, 62, 62, 0.594)), url(/assets/home-bg.jpg);
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.821), rgba(65, 62, 62, 0.594)), url(./assets/home-bg.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
