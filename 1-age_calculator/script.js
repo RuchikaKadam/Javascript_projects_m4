@@ -8,6 +8,8 @@ let result = document.getElementById("result");
 function calculateAge() {
     //user given date and its day, month, year
     let birthDate = new Date(dateInput.value);
+    // console.log(dateInput.value);
+    // console.log(birthDate);
     
     let date = birthDate.getDate();
     let month = birthDate.getMonth() + 1;
@@ -43,8 +45,8 @@ function calculateAge() {
         mm = 11;
         yy--;
     }
-    if(birthDate === ""){
-        alert("Please enter you birthday!")
+    if(dateInput.value === ""){
+        alert("Please enter your birthday!")
     }
     else{
         result.innerHTML = `You are <span>${yy}</span> years, <span>${mm}</span> months and <span>${dd}</span> days old!`
